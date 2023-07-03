@@ -11,7 +11,7 @@ const Form = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues: initialValues,
-      validationSchema: loginSchemas,
+      loginSchemas,
       onSubmit: (values) => {
         console.log(values);
       },
